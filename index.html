@@ -1,29 +1,39 @@
 <!DOCTYPE html>
-<html class="#{html_class}" lang="en">
+<html lang="en">
 
 <head>
-  <title>Home - Bancom Accounting</title>
-  <meta name="format-detection" content="telephone=no" />
-  <meta name="viewport"
-    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
-  <meta content="IE=edge" />
   <meta charset="utf-8" />
+  <title>Home - Bancom Accounting</title>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" />
   <meta content="Accounting, Zimbabwe, Tax Clearance, PRAZ, Company Registration" name="keywords" />
   <meta content="Accounting services and business consulting firm" name="description" />
-  <meta name="theme-color" content="#1e3953" />
 
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" />
+
+  <!-- Google Web Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Ubuntu:wght@400;500;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/fonts.css" />
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Libraries Stylesheet -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/icons.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border brand-red" style="width: 3rem; height: 3rem;" role="status">
+    </div>
+  </div>
+  <!-- Spinner End -->
+
+
   <div class="page">
     <section id="home">
       <header class="page-head">
@@ -45,8 +55,7 @@
                     <li>
                       <div class="unit flex-row unit-spacing-xs">
                         <div class="unit-left">
-                          <span
-                            class="icon icon-xxs-small icon-primary material-icons-place icon-shift-1 offset-top-2"></span>
+                          <i class="icon-primary bc-location-dot"></i>
                         </div>
                         <div class="unit-body">
                           <p class="text-white font-accent">
@@ -58,7 +67,7 @@
                     <li>
                       <div class="unit flex-row unit-spacing-xs">
                         <div class="unit-left">
-                          <span class="icon icon-xxs icon-primary fa-clock-o offset-top-2"></span>
+                          <i class="icon-primary bc-clock"></i>
                         </div>
                         <div class="unit-body">
                           <p class="text-white font-accent">
@@ -70,7 +79,7 @@
                     <li>
                       <div class="unit flex-row unit-spacing-xs">
                         <div class="unit-left">
-                          <span class="icon icon-xxs icon-primary material-icons-phone icon-shift-2"></span>
+                          <i class="icon-primary bc-phone me-2"></i>
                         </div>
                         <div class="unit-body text-white">
                           <a class="link-white-v2 font-accent" href="tel:+263712164900">+263 (712) 164 900</a>
@@ -83,11 +92,11 @@
                   <div class="rd-navbar-aside-group">
                     <ul class="list-inline list-inline-reset">
                       <li>
-                        <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest fa fa-facebook" target="_blank"
+                        <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest bc-facebook-f" target="_blank"
                           href="https://facebook.com/Bancom-Accounting"></a>
                       </li>
                       <li>
-                        <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest fa fa-whatsapp" target="_blank"
+                        <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest bc-whatsapp" target="_blank"
                           href="https://wa.me/263778900817"></a>
                       </li>
                     </ul>
@@ -134,8 +143,10 @@
                       </p>
                     </div>
                     <div class="slider-button" data-caption-animate="fadeInUp" data-caption-delay="450s">
-                      <a class="btn btn-icon btn-icon-right btn-cello" href="#about"><span
-                          class="icon icon-xs-smaller fa-angle-right"></span>Learn More</a>
+                      <div class="slider-button" data-caption-animate="fadeInUp" data-caption-delay="450s">
+                        <a class="btn btn-icon btn-icon-right btn-cello" href="#about"><span
+                            class="icon bc-angle-right"></span>Learn More</a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -157,7 +168,7 @@
                     </div>
                     <div class="slider-button" data-caption-animate="fadeInUp" data-caption-delay="450s">
                       <a class="btn btn-icon btn-icon-right btn-primary" href="#about"><span
-                          class="icon icon-xs-smaller fa-angle-right"></span>Learn More</a>
+                          class="icon bc-angle-right"></span>Learn More</a>
                     </div>
                   </div>
                 </div>
@@ -244,8 +255,8 @@
               <h3 class="text-white">About Us</h3>
               <p class="text-white">
                 Bancom Accounting, a rising star in the accounting and business consulting landscape, provides
-                specialized services across Zimbabwe. Our expertise spans accounting, tax advisory, audit and assurance,
-                and company secretarial services, all customized to align with our clients' business requirements.
+                specialized services across Zimbabwe. Our expertise spans accounting, business and tax advisory, audit
+                and assurance, human resources consulting and secretarial services.
               </p>
               <h4>Our Vision</h4>
               <p class="text-white">
@@ -285,7 +296,7 @@
             <article class="icon-box">
               <div class="box-top">
                 <div class="box-icon">
-                  <span class="icon icon-primary icon-lg fl-puppets-maths26"></span>
+                  <span class="icon icon-primary icon-lg bc-maths26"></span>
                 </div>
                 <div class="box-header">
                   <h5>Accounting</h5>
@@ -304,7 +315,7 @@
             <article class="icon-box">
               <div class="box-top">
                 <div class="box-icon">
-                  <span class="icon icon-primary icon-lg fl-puppets-documents1"></span>
+                  <span class="icon icon-primary icon-lg bc-documents1"></span>
                 </div>
                 <div class="box-header">
                   <h5>Company Registration</h5>
@@ -323,7 +334,7 @@
             <article class="icon-box">
               <div class="box-top">
                 <div class="box-icon">
-                  <span class="icon icon-primary icon-lg fl-puppets-chart6"></span>
+                  <span class="icon icon-primary icon-lg bc-chart6"></span>
                 </div>
                 <div class="box-header">
                   <h5>Tax Advisory</h5>
@@ -340,7 +351,8 @@
           </div>
           <div class="slider-button" data-caption-animate="fadeInUp" data-caption-delay="450s">
             <a class="btn btn-icon btn-icon-right btn-cello" href="services.html"><span
-                class="icon icon-xs-smaller fa-angle-right"></span>View All Services</a>
+                class="icon bc-angle-right"></span>
+              </span>View All Services</a>
           </div>
         </div>
       </div>
@@ -356,7 +368,7 @@
               <article class="icon-box-horizontal">
                 <div class="unit unit-xs unit-spacing-md flex-column flex-sm-row">
                   <div class="unit-left">
-                    <span class="icon icon-primary icon-lg fl-puppets-diamond offset-top-5"></span>
+                    <span class="icon icon-primary icon-lg bc-diamond offset-top-5"></span>
                   </div>
                   <div class="unit-body">
                     <h5>Excellence</h5>
@@ -370,7 +382,7 @@
               <article class="icon-box-horizontal">
                 <div class="unit unit-xs unit-spacing-md flex-column flex-sm-row">
                   <div class="unit-left">
-                    <span class="icon icon-primary icon-lg fl-puppets-balance7 offset-top-5"></span>
+                    <span class="icon icon-primary icon-lg bc-balance7 offset-top-5"></span>
                   </div>
                   <div class="unit-body">
                     <h5>Integrity</h5>
@@ -384,7 +396,7 @@
               <article class="icon-box-horizontal">
                 <div class="unit unit-xs unit-spacing-md flex-column flex-sm-row">
                   <div class="unit-left">
-                    <span class="icon icon-primary icon-lg fl-puppets-book-bag offset-top-5"></span>
+                    <span class="icon icon-primary icon-lg bc-book-bag offset-top-5"></span>
                   </div>
                   <div class="unit-body">
                     <h5>Professionalism</h5>
@@ -449,7 +461,8 @@
                   aria-labelledby="accordionOne-accordion-head-ihwkidcx" data-bs-parent="#accordionOne">
                   <div class="accordion-body">
                     <p>
-                      Yes, we are accessible on <a class="inline-link" href="https://wa.me/263778900817">WhatsApp</a>. Feel free to reach out to us at any time that's convenient for
+                      Yes, we are accessible on <a class="inline-link" href="https://wa.me/263778900817">WhatsApp</a>.
+                      Feel free to reach out to us at any time that's convenient for
                       you. We're committed to maintaining open lines of communication with our clients.
                     </p>
                   </div>
@@ -592,29 +605,33 @@
           </div>
           <div class="col-lg-7 col-xl-6">
             <h3>Get in Touch</h3>
-            <form class="rd-mailform row" data-form-output="form-output-global" data-form-type="contact" method="post"
-              action="bat/rd-mailform.php">
+            <form class="row" data-form-output="form-output-global" data-form-type="contact" method="post"
+              action="scr/contact.php">
               <div class="row row-30">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control bg-whisper-lighten" id="contact-name" type="text"
-                      name="name" data-constraints="@Required" />
-                    <label class="form-label" for="contact-name">Name</label>
+                    <div class="form-floating">
+                      <input class="form-control bg-whisper-lighten" id="contact-name" type="text" name="name"
+                        placeholder="Name" required>
+                      <label for="contact-name">Name</label>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <input class="form-control bg-whisper-lighten" id="contact-us-email" type="email"
-                      name="email" data-constraints="@Email @Required" />
-                    <label class="form-label" for="contact-us-email">Email</label>
+                    <div class="form-floating">
+                      <input class="form-control bg-whisper-lighten" id="contact-us-email" type="email" name="email"
+                        placeholder="Email" required>
+                      <label for="contact-us-email">Email</label>
+                    </div>
                   </div>
                 </div>
                 <div class="col-sm-12">
                   <div class="form-group">
-                    <div class="textarea-lined-wrap">
+                    <div class="textarea-lined-wrap form-floating">
                       <textarea class="form-control form-border-bottom" id="contact-message" name="message"
-                        data-constraints="@Required"></textarea>
-                      <label class="form-label" for="contact-message">Message</label>
+                        placeholder="Message" style="height: 200px" required></textarea>
+                      <label for="contact-message">Message</label>
                     </div>
                   </div>
                 </div>
@@ -654,20 +671,20 @@
                 </div>
                 <div>
                   <div>
-                    <i class="icon-primary fa fa-phone me-3"></i><a class="link-white-v2"
-                      href="tel:+263712164900">+263 (712) 164 900</a>
+                    <i class="icon-primary bc-phone me-3"></i><a class="link-white-v2" href="tel:+263712164900">+263
+                      (712) 164 900</a>
                     |
                     <a class="link link-white-v2" href="tel:+263735280441">+263 (735) 280 441</a>
                   </div>
                   <div>
-                    <i class="icon-primary fa fa-envelope me-3"></i><a class="link-white-v2 fst-italic"
+                    <i class="icon-primary bc-envelope me-3"></i><a class="link-white-v2 fst-italic"
                       href="mailto:info@bancomaccounting.co.zw">info@bancomaccounting.co.zw</a>
                   </div>
                   <div class="mt-3">
-                    <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest fa fa-facebook me-2"
-                      target="_blank" href="https://facebook.com/Bancom-Accounting"></a>
-                    <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest fa fa-whatsapp me-0"
-                      target="_blank" href="https://wa.me/263778900817"></a>
+                    <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest bc-facebook-f me-2" target="_blank"
+                      href="https://facebook.com/Bancom-Accounting"></a>
+                    <a class="icon icon-round icon-san-juan-filled icon-xxs-smallest bc-whatsapp me-0" target="_blank"
+                      href="https://wa.me/263778900817"></a>
                   </div>
                 </div>
               </div>
